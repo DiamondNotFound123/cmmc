@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 引入Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-image: url('城市之光.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif; /* 使用Inter字体 */
+        text-align: center;
+    }
+    h1 {
+        color:white;
+        font-size: 85px;
+        margin: 0;
+        opacity: 0; /* 初始状态为透明 */
+        transform: translateY(-50px); /* 初始位置向上偏移 */
+        animation: slideDownFadeIn 1.5s ease-out forwards; /* 向下滑动渐显动画 */
+        font-weight: 700; /* 加粗 */
+        letter-spacing: -2px; /* 字间距调整 */
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* 文字阴影 */
+
+    }
+    h2 {
+        color:white;
+        font-size: 65px;
+        margin: 0;
+         opacity: 0; /* 初始状态为透明 */
+        transform: translateY(-50px); /* 初始位置向上偏移 */
+        animation: slideDownFadeIn 1.5s ease-out 0.5s forwards; /* 延迟0.5秒后开始动画 */
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* 文字阴影 */
+
+
+    }
+    .button-container {
+        display: flex; /* 让按钮在同一行显示 */
+        justify-content: center; /* 水平居中 */
+        gap: 70px; /* 按钮之间的间距 */
+        margin-top: 130px; /* 与标题的距离 */
+        opacity: 0; /* 初始状态为透明 */
+        transform: translateY(50px); /* 初始位置向下偏移 */
+        animation: slideUpFadeIn 1.5s ease-out 1s forwards; /* 延迟1秒后开始动画 */
+
+    }
+    .custom-button {
+        width: 300px;
+        height: 50px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 25px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        cursor: pointer;
+    }
+    .custom-button:hover {
+        background-color: #45a049;
+         transform: translateY(-2px); /* 悬停时轻微上移 */
+    }
+    .custom-button:active {
+         background-color: rgba(255, 255, 255, 0.3); /* 点击时背景更亮 */
+        transform: translateY(0); /* 点击时恢复原位 */
+
+    }
+     /* 向下滑动渐显动画 */
+    @keyframes slideDownFadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* 向上滑动渐显动画 */
+    @keyframes slideUpFadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+         font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        
+</style>
+<title>Confidential Meeting's Movies Club</title>
+</head>
+<body>
+    <h1>Confidential Meeting's Movies Club</h1>
+    <h2>下一部你希望看什么？</h2>
+    <div class="button-container">
+        <a href="投票系统pro.html"><input type="button" value="点击以进行投票" class="custom-button" /></a>
+        <a href="查看历年观影记录.html"><input type="button" value="点击以查看历年观影记录" class="custom-button" /></a>
+        <a href="https://www.libvio.fun/"><input type="button" value="点击以观看更多电影" class="custom-button" /></a>
+        <a href="意见反馈.html"><input type="button" value="向我们提供意见反馈" class="custom-button" /></a>
+    </div>
+     
+
+
+      </body>
+</html>
